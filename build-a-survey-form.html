@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Survey Form!</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="main-container">
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform!</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" required placeholder="Enter your name...">
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" required placeholder="Enter your email...">
+      <label id="number-label" for="number">Age</label>
+      <input id="number" type="number" min="13" max="100" placeholder="Enter your age. Min 13 and Max 100.">
+      <label id="label-job-dropdown" for="dropdown">What is your current job?</label>
+      <select id="dropdown">
+        <option value="">Select one</option>
+        <option value="op-student">I'm a student</option>
+        <option value="op-work-full">I'm working full time</option>
+        <option value="op-work-half">I'm working half time</option>
+        <option value="op-work-not">I ain't working on a job</option>
+        <option value="op-not-say">I prefer not to say</option>
+        <option value="op-other">Other</option>
+      </select>
+      <p id="p-radio-recommend">Would you recommend us?</p>
+      <input id="radio-recommend-yes" type="radio" name="radio-recommend" value="radio-recommend-yes"><label id="label-radio-recommend-yes" for="radio-recommend-yes">Yes, I recommend it</label>
+      <input id="radio-recommend-no" type="radio" name="radio-recommend" value="radio-recommend-no"><label id="label-radio-recommend-no" for="radio-recommend-no">No, I do not recommend it</label>
+      <input id="radio-recommend-may" type="radio" name="radio-recommend" value="radio-recommend-may"><label id="label-radio-recommend-may" for="radio-recommend-may">Just maybe...</label>
+      <p id="p-checkbox-improved">What do you want to us improved?</p>
+      <input id="checkbox-improved-front" type="checkbox" value="checkbox-improved-front"><label id="label-checkbox-improved-front" for="checkbox-improved-front">Front-End Development</label>
+      <input id="checkbox-improved-back" type="checkbox" value="checkbox-improved-back"><label id="label-checkbox-improved-back" for="checkbox-improved-back">Back-End Development</label>
+      <input id="checkbox-improved-data" type="checkbox" value="checkbox-improved-data"><label id="label-checkbox-improved-data" for="checkbox-improved-data">Data Science</label>
+      <input id="checkbox-improved-databases" type="checkbox" value="checkbox-improved-databases"><label id="label-checkbox-improved-databases" for="checkbox-improved-databases">Databases</label>
+      <input id="checkbox-improved-uiux" type="checkbox" value="checkbox-improved-uiux"><label id="label-checkbox-improved-uiux" for="checkbox-improved-uiux">UI/UX</label>
+      <p id="p-textarea">Would you write what do you think?</p>
+      <textarea placeholder="Tell us, what do you think?" rows="7" cols="50"></textarea>
+      <input type="submit" id="submit" value="Submit the form">
+    </form>
+    </main>
+  </body>
+</html>
